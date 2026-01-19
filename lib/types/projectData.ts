@@ -11,4 +11,6 @@ export interface ProjectData {
 	demo: string | null,
 	status: ProjectStatus,
 	gradient: string,
+	logo?: string,  // 專案 LOGO 路徑（選填）
+	logoAlt?: string,  // LOGO 替代文字（選填）
 }

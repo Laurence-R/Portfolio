@@ -13,12 +13,14 @@ export const PROJECT_DATA: ProjectData[] = [
 	},
 	{
 		title: 'InvisiGuard',
-		description: '實現影像隱寫術的 Web 應用，能夠在圖片中隱藏和提取訊息，確保資訊的隱密傳輸。',
+		description: '基於 DWT 與 QIM 技術的影像隱寫術系統，在不破壞視覺品質下將資訊隱密嵌入圖像，保護數位資產版權。',
 		tags: ['Steganography', 'Image Processing', 'Web App', 'Security'],
-		github: 'https://github.com',
+		github: 'https://github.com/Laurence-R/InvisiGuard.git',
 		demo: 'https://example.com',
 		status: 'completed',
 		gradient: 'from-green-500/20 to-emerald-500/20',
+		logo: '/projects/invisiguard.svg',
+		logoAlt: 'InvisiGuard Logo',
 	},
 	{
 		title: 'Chicken-Transformer',
