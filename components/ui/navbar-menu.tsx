@@ -70,24 +70,50 @@ export const Menu = ({
   children: React.ReactNode;
 }) => {
   const [hoveredIndex, setHoveredIndex] = React.useState<number | null>(null);
+  const [pillStyle, setPillStyle] = React.useState({ left: 0, width: 0 });
+  const itemRefs = React.useRef<(HTMLDivElement | null)[]>([]);
+  const navRef = React.useRef<HTMLElement | null>(null);
   const childrenArray = React.Children.toArray(children);
 
+  React.useEffect(() => {
+    if (hoveredIndex !== null && itemRefs.current[hoveredIndex] && navRef.current) {
+      const item = itemRefs.current[hoveredIndex]!;
+      const nav = navRef.current!;
+      const navRect = nav.getBoundingClientRect();
+      const itemRect = item.getBoundingClientRect();
+      setPillStyle({
+        left: itemRect.left - navRect.left,
+        width: itemRect.width,
+      });
+    }
+  }, [hoveredIndex]);
+
   return (
-    <nav className="relative flex items-center gap-1">
+    <nav
+      ref={navRef}
+      className="relative flex items-center gap-1"
+      onMouseLeave={() => setHoveredIndex(null)}
+    >
+      {hoveredIndex !== null && (
+        <motion.span
+          className="absolute top-0 h-full rounded-full bg-neutral-100 dark:bg-white/[0.08] pointer-events-none"
+          initial={false}
+          animate={{
+            left: pillStyle.left,
+            width: pillStyle.width,
+            opacity: 1,
+          }}
+          exit={{ opacity: 0 }}
+          transition={{ type: "spring", damping: 25, stiffness: 350 }}
+        />
+      )}
       {childrenArray.map((child, i) => (
         <div
           key={i}
+          ref={(el) => { itemRefs.current[i] = el; }}
           className="relative px-3.5 py-2"
           onMouseEnter={() => setHoveredIndex(i)}
-          onMouseLeave={() => setHoveredIndex(null)}
         >
-          {hoveredIndex === i && (
-            <motion.span
-              layoutId="nav-pill"
-              className="absolute inset-0 rounded-full bg-neutral-100 dark:bg-white/[0.08]"
-              transition={{ type: "spring", damping: 25, stiffness: 350 }}
-            />
-          )}
           <span className="relative z-10">{child}</span>
         </div>
       ))}

@@ -10,20 +10,20 @@ const projects = [
     sourceLink: "https://github.com/Laurence-R/AI-Tool-Hub"
   },
   {
-    title: "GuardPixel",
-    labels: ["Security", "Image", "Watermarking", "AI"],
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi esse, ipsum repudiandae quae veritatis facilis eaque debitis. Illum, harum repellendus reiciendis eligendi recusandae, sequi esse cumque amet iste asperiores nemo.",
-    imgSrc: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "InvisiGuard",
+    labels: ["Cyber Security", "Image", "Watermarking", "AI"],
+    description: "InvisiGuard is a privacy-centric, browser-based watermarking tool that provides invisible copyright protection using DWT and QIM algorithms. By processing all data locally via Web Workers, it ensures that your original images and watermarks never leave your device, offering a high-performance solution that balances robust security with total data privacy.",
+    imgSrc: "/projects/invisiguard.png",
     demoLink: "https://example.com",
-    sourceLink: "https://example.com"
+    sourceLink: "https://github.com/Laurence-R/InvisiGuard"
   },
   {
-    title: "Project 3",
-    labels: ["AI", "Workflow", "Productivity"],
+    title: "Chicken Transformer",
+    labels: ["AI", "Game", "Workout", "Fun", "Nvidia Jetson Orin Nano", "Object Detection"],
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi esse, ipsum repudiandae quae veritatis facilis eaque debitis. Illum, harum repellendus reiciendis eligendi recusandae, sequi esse cumque amet iste asperiores nemo.",
     imgSrc: "https://images.unsplash.com/photo-1623582854588-d60de57fa33f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     demoLink: "https://example.com",
-    sourceLink: "https://example.com"
+    sourceLink: "https://github.com/Laurence-R/chicken-transformer.git"
   },{
     title: "Project 4",
     labels: ["AI", "Workflow", "Productivity"],

@@ -46,7 +46,7 @@ export function About() {
               About Me
             </h2>
             <p className="text-base leading-relaxed text-slate-600 dark:text-slate-400 md:text-lg">
-              我目前就讀彰師大資訊工程學系，今年大三，非常喜歡探索資訊技術。從零基礎到全端開發，再到人工智慧，雖然掌握了多個程式語言的撰寫能力，但我更重視的是如何運用這些技術來解決實際問題，創造有意義的產品。
+              我目前就讀彰師大資訊工程學系，今年大三，非常喜歡探索資訊技術。從零基礎到全端開發，到人工智慧再到影像處理領域，雖然我涉及了多個程式語言與領域，但我更重視的是如何運用這些技術來解決實際問題，創造有意義的產品。
               畢竟在 AI 時代下，工程師的價值不再是單純的程式碼撰寫，而是如何將技術與創意結合，打造出真正有用且具影響力的解決方案。
             </p>
             <p className="text-base leading-relaxed text-slate-600 dark:text-slate-400 md:text-lg">
@@ -72,10 +72,7 @@ export function About() {
                 PG-DENet — 物理導向類畫化影像增強網路
               </h3>
               <p className="mt-3 text-sm leading-relaxed text-slate-600 dark:text-slate-400">
-                解決自動駕駛系統於夜間因光線極端、資料稀缺及日夜特徵偏移（Domain
-                Gap）導致的感知失效問題。採用結合 Retinex 物理理論與深度展開網路（DUN）的「灰盒」架構確保可解釋性，並引入
-                Wasserstein 特徵對齊機制，使增強後的夜間影像貼近日間資料，讓 YOLO11
-                偵測模型無需重新訓練即可隨插即用。
+                本研究旨在解決自動駕駛在夜間環境中面臨的感知失效問題。夜間影像常因低光、眩光與動態範圍不足而產生細節截斷，使偵測模型效能大幅下降，且夜間資料稀缺使重新訓練成本極高。為突破此瓶頸，我們提出 PG-DENet，一種物理導向、可解釋且低延遲的類晝化影像增強網路。PG-DENet 以 Retinex 模型為基礎，結合深度展開網路實現物理一致的影像分解，並透過 Wasserstein 特徵對齊機制，使增強後影像在 YOLO11 特徵空間貼近日間資料。模型具備即插即用特性，無需重新訓練偵測器即可提升夜間偵測準確率，並在記憶體與運算效能上達成即時應用需求。本研究期望在視覺品質、機器感知與效能三方面皆超越現行方法。
               </p>
               <div className="mt-4 flex flex-wrap gap-2">
                 {["Retinex Theory", "DUN", "Wasserstein Alignment", "YOLO11", "TensorRT"].map(
