@@ -4,7 +4,7 @@ const projects = [
   {
     title: "AI Tool Hub",
     labels: ["AI", "Workflow", "Productivity", "Social media platform"],
-    description: "AI Tool Hub is a modern platform for exploring and sharing AI tools. It helps users discover, compare, and rate various AI tools. Additionally, the platform features a collection system, allowing users to share curated lists and enhance their workflow efficiency with the best tools.",
+    description: "AI Tool Hub is a modern, full-stack platform designed for discovering, comparing, and reviewing AI tools. Built with a cutting-edge stack including Next.js 16, React 19, Tailwind CSS 4, and Prisma , it features a sleek Glassmorphism UI with seamless dark mode support. Key highlights include an intuitive side-by-side comparison feature (up to 4 tools), a robust user authentication system with OAuth integrations, personalized tool collections, and an interactive community review system. The platform is also fully equipped with a comprehensive admin dashboard for efficient data and user management.",
     imgSrc: "/projects/aitoolhub.png",
     demoLink: "https://example.com",
     sourceLink: "https://github.com/Laurence-R/AI-Tool-Hub"
@@ -12,7 +12,7 @@ const projects = [
   {
     title: "InvisiGuard",
     labels: ["Cyber Security", "Image", "Watermarking", "AI"],
-    description: "InvisiGuard is a privacy-centric, browser-based watermarking tool that provides invisible copyright protection using DWT and QIM algorithms. By processing all data locally via Web Workers, it ensures that your original images and watermarks never leave your device, offering a high-performance solution that balances robust security with total data privacy.",
+    description: "InvisiGuard is a privacy-first, browser-based digital watermarking solution that seamlessly blends robust copyright protection with high performance. Built with a modern stack including Next.js 16, React 19, and Tailwind CSS 4, it leverages advanced DWT (Discrete Wavelet Transform) and QIM (Quantization Index Modulation) algorithms to embed invisible, highly resilient watermarks into images. Its standout feature is its 100% client-side processing architecture powered by Native Web Workers, ensuring absolute data privacy with zero server uploads and a smooth, freeze-free user experience even during bulk image processing.",
     imgSrc: "/projects/invisiguard.png",
     demoLink: "https://example.com",
     sourceLink: "https://github.com/Laurence-R/InvisiGuard"
@@ -20,18 +20,11 @@ const projects = [
   {
     title: "Chicken Transformer",
     labels: ["AI", "Game", "Workout", "Fun", "Nvidia Jetson Orin Nano", "Object Detection"],
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi esse, ipsum repudiandae quae veritatis facilis eaque debitis. Illum, harum repellendus reiciendis eligendi recusandae, sequi esse cumque amet iste asperiores nemo.",
-    imgSrc: "https://images.unsplash.com/photo-1623582854588-d60de57fa33f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    description: "Chicken Transformer is a vision-based autonomous fitness analytics system designed for zero-contact natural interaction without the need for any wearable sensors. Powered by edge computing on the NVIDIA Jetson platform , the system utilizes the YOLOv8-Pose model combined with TensorRT FP16 acceleration to process human posture in real-time. The project features three core innovations: extreme edge optimization that guarantees complete offline privacy with sub-30ms latency , a geometric algorithm-driven smart counter that achieves over 96% accuracy across 10+ core fitness exercises , and a robust natural user experience featuring a dynamic state machine to prevent false triggers and ensure seamless interaction.",
+    imgSrc: "/projects/chickentransformer.png",
     demoLink: "https://example.com",
     sourceLink: "https://github.com/Laurence-R/chicken-transformer.git"
-  },{
-    title: "Project 4",
-    labels: ["AI", "Workflow", "Productivity"],
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi esse, ipsum repudiandae quae veritatis facilis eaque debitis. Illum, harum repellendus reiciendis eligendi recusandae, sequi esse cumque amet iste asperiores nemo.",
-    imgSrc: "https://images.unsplash.com/photo-1636041293178-808a6762ab39?q=80&w=3464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    demoLink: "https://example.com",
-    sourceLink: "https://example.com"
-  },
+  }
 ]
 
 export function Projects() {
