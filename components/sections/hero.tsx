@@ -19,8 +19,8 @@ export function Hero() {
 	return (
 		<section id="home">
 			<BackgroundBeamsWithCollision className="min-h-screen">
-				<div>
-					<motion.div className="relative mx-4 my-4 flex flex-col items-center justify-center gap-4 text-center sm:mx-0 sm:mb-0 sm:flex-row">
+				<div className="w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+					<motion.div className="relative my-4 flex flex-col items-center justify-center gap-3 text-center sm:gap-4 sm:mb-0 sm:flex-row">
 						<LayoutTextFlip 
 							text="哈囉，我是"
 							words={["張勝麟", "Laurence", "Chang Sheng-Lin"]}
@@ -29,14 +29,14 @@ export function Hero() {
 					<h2 className="text-2xl md:text-4xl lg:text-7xl z-20 font-bold text-center text-slate-900 dark:text-slate-50 tracking-tight">
 						
 					</h2>
-					<div className="mt-4">
-						<FlipWords words={identities} className="text-md md:text-lg lg:text-2xl font-bold text-indigo-700 dark:text-indigo-300" />
+					<div className="mt-3 sm:mt-4 flex justify-center">
+						<FlipWords words={identities} className="text-sm sm:text-base md:text-lg lg:text-2xl font-bold text-indigo-700 dark:text-indigo-300" />
 					</div>
-					<div className="flex justify-center mt-8 md:mt-12">
+					<div className="flex justify-center mt-6 sm:mt-8 md:mt-12">
 						<a href="https://mail.google.com/mail/?view=cm&to=sdjoid@gmail.com" target="_blank" rel="noopener noreferrer">
 							<Button
 								borderRadius="1.75rem"
-								className="cursor-pointer bg-white dark:bg-slate-900 font-bold text-lg text-black dark:text-white border-neutral-200 dark:border-slate-800"
+								className="cursor-pointer bg-white dark:bg-slate-900 font-bold text-base sm:text-lg text-black dark:text-white border-neutral-200 dark:border-slate-800"
 							>
 								Contact Me <IconMail size={25} className="ml-2" />
 							</Button>

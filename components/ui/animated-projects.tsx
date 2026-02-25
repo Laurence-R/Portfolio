@@ -130,7 +130,7 @@ export function AnimatedProjectShowCase ({
             <p className="text-xs text-gray-500 dark:text-neutral-500 sm:text-sm">
               {projects[active].labels.join(" / ")}
             </p>
-            <motion.p className="h-[300px] mt-4 text-sm text-gray-500 dark:text-neutral-300 sm:text-base md:mt-8 md:text-lg">
+            <motion.p className="mt-3 text-sm text-gray-500 dark:text-neutral-300 sm:mt-4 sm:text-base md:mt-8 md:text-lg">
               {projects[active].description.split(" ").map((word, index) => (
                 <motion.span
                   key={index}

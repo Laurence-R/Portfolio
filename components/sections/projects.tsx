@@ -32,7 +32,7 @@ export function Projects() {
     <section id="projects" className="min-h-screen">
       <div className="py-20">
         <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-10">
-          <h2 className="text-end text-2xl font-bold text-slate-900 dark:text-white sm:text-3xl md:text-4xl mb-2 md:mb-4">
+          <h2 className="text-center text-2xl font-bold text-slate-900 dark:text-white sm:text-end sm:text-3xl md:text-4xl mb-2 md:mb-4">
             我的作品集
           </h2>
         </div>

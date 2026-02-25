@@ -3,7 +3,7 @@ import { ArrowUp } from "lucide-react"
 
 export function About() {
   return (
-    <section id="about" className="container mx-auto px-4 md:px-6 lg:px-8">
+    <section id="about" className="container mx-auto px-4 sm:px-6 lg:px-8">
       <div className="min-h-screen flex flex-col lg:flex-row">
         {/* 左側照片 */}
         <div className="flex items-center justify-center">
@@ -39,10 +39,10 @@ export function About() {
           </CometCard>
         </div>
         {/* 右側文字 */}
-        <div className="flex flex-1 flex-col items-center gap-12 py-8 lg:py-24 lg:pl-24">
+        <div className="flex flex-1 flex-col items-center gap-8 py-8 sm:gap-10 md:gap-12 lg:py-24 lg:pl-16 xl:pl-24">
           {/* 關於我 */}
           <div className="space-y-6">
-            <h2 className="text-3xl font-bold tracking-tight text-slate-900 dark:text-slate-50 md:text-4xl lg:text-5xl">
+            <h2 className="text-2xl font-bold tracking-tight text-slate-900 dark:text-slate-50 sm:text-3xl md:text-4xl lg:text-5xl">
               About Me
             </h2>
             <p className="text-base leading-relaxed text-slate-600 dark:text-slate-400 md:text-lg">
