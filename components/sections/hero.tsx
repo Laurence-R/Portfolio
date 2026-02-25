@@ -20,7 +20,7 @@ export function Hero() {
 		<section id="home">
 			<BackgroundBeamsWithCollision className="min-h-screen">
 				<div className="w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-					<motion.div className="relative my-4 flex flex-col items-center justify-center gap-3 text-center sm:gap-4 sm:mb-0 sm:flex-row">
+					<motion.div className="relative my-4 flex flex-col items-center justify-center gap-3 text-center sm:gap-4 sm:mb-0 xl:flex-row xl:flex-nowrap xl:gap-5">
 						<LayoutTextFlip 
 							text="哈囉，我是"
 							words={["張勝麟", "Laurence", "Chang Sheng-Lin"]}
