@@ -69,12 +69,9 @@ export function Navigation({ className }: { className?: string }) {
             <a
               href="#home"
               onClick={(e) => handleSmoothScroll(e, "#home")}
-              className="group flex items-center gap-2.5 shrink-0"
+              className="group flex items-center"
             >
-              <div className="relative h-8 w-8 rounded-lg bg-gradient-to-br from-indigo-500 to-violet-600 flex items-center justify-center shadow-sm transition-shadow group-hover:shadow-md group-hover:shadow-indigo-500/25">
-                <span className="text-sm font-bold text-white">SL</span>
-              </div>
-              <span className="hidden sm:block text-base font-semibold tracking-tight text-neutral-900 dark:text-white">
+              <span className="hidden sm:block text-lg font-semibold tracking-tight text-neutral-900 dark:text-white">
                 Sheng-Lin
               </span>
             </a>

@@ -1,29 +1,54 @@
+import { img } from "motion/react-client"
 import { AnimatedProjectShowCase } from "../ui/animated-projects"
 
 const projects = [
   {
     title: "AI Tool Hub",
     labels: ["AI", "Workflow", "Productivity", "Social media platform"],
-    description: "AI Tool Hub is a modern, full-stack platform designed for discovering, comparing, and reviewing AI tools. Built with a cutting-edge stack including Next.js 16, React 19, Tailwind CSS 4, and Prisma , it features a sleek Glassmorphism UI with seamless dark mode support. Key highlights include an intuitive side-by-side comparison feature (up to 4 tools), a robust user authentication system with OAuth integrations, personalized tool collections, and an interactive community review system. The platform is also fully equipped with a comprehensive admin dashboard for efficient data and user management.",
+    description: "A full-stack platform for discovering, comparing, and reviewing AI tools. Built with Next.js 16, React 19, Tailwind CSS 4, and Prisma, featuring Glassmorphism UI with dark mode. Highlights include side-by-side tool comparison (up to 4), OAuth authentication, personalized collections, community reviews, and an admin dashboard.",
     imgSrc: "/projects/aitoolhub.png",
-    demoLink: "https://example.com",
+    demoLink: null,
     sourceLink: "https://github.com/Laurence-R/AI-Tool-Hub"
   },
   {
     title: "InvisiGuard",
     labels: ["Cyber Security", "Image", "Watermarking", "AI"],
-    description: "InvisiGuard is a privacy-first, browser-based digital watermarking solution that seamlessly blends robust copyright protection with high performance. Built with a modern stack including Next.js 16, React 19, and Tailwind CSS 4, it leverages advanced DWT (Discrete Wavelet Transform) and QIM (Quantization Index Modulation) algorithms to embed invisible, highly resilient watermarks into images. Its standout feature is its 100% client-side processing architecture powered by Native Web Workers, ensuring absolute data privacy with zero server uploads and a smooth, freeze-free user experience even during bulk image processing.",
+    description: "A privacy-first, browser-based digital watermarking tool built with Next.js 16, React 19, and Tailwind CSS 4. Uses DWT and QIM algorithms to embed invisible, resilient watermarks into images. Runs 100% client-side via Web Workers — no server uploads, zero data leakage, and smooth performance even during bulk processing.",
     imgSrc: "/projects/invisiguard.png",
-    demoLink: "https://example.com",
+    demoLink: null,
     sourceLink: "https://github.com/Laurence-R/InvisiGuard"
   },
   {
     title: "Chicken Transformer",
     labels: ["AI", "Game", "Workout", "Fun", "Nvidia Jetson Orin Nano", "Object Detection"],
-    description: "Chicken Transformer is a vision-based autonomous fitness analytics system designed for zero-contact natural interaction without the need for any wearable sensors. Powered by edge computing on the NVIDIA Jetson platform , the system utilizes the YOLOv8-Pose model combined with TensorRT FP16 acceleration to process human posture in real-time. The project features three core innovations: extreme edge optimization that guarantees complete offline privacy with sub-30ms latency , a geometric algorithm-driven smart counter that achieves over 96% accuracy across 10+ core fitness exercises , and a robust natural user experience featuring a dynamic state machine to prevent false triggers and ensure seamless interaction.",
+    description: "A vision-based fitness analytics system requiring no wearable sensors. Powered by YOLOv8-Pose with TensorRT FP16 on NVIDIA Jetson, it processes posture in real-time at sub-30ms latency. A geometry-driven rep counter achieves 96%+ accuracy across 10+ exercises, with a state machine to prevent false triggers.",
     imgSrc: "/projects/chickentransformer.png",
-    demoLink: "https://example.com",
-    sourceLink: "https://github.com/Laurence-R/chicken-transformer.git"
+    demoLink: null,
+    sourceLink: "https://github.com/Laurence-R/chicken-transformer"
+  },
+  {
+    title: "Professor Personal Website",
+    labels: ["Personal Website", "Next.js", "Tailwind CSS", "React", "Aceternity UI"],
+    description: "A personal website built with Next.js 16, Tailwind CSS, and Aceternity UI, designed to showcase the professor's research, publications, and courses. The website features a clean and modern design with a focus on user experience and accessibility. It includes sections for the professor's biography, research interests, publications, and a contact form for inquiries.",
+    imgSrc: "/projects/iccweb.png",
+    demoLink: "https://personal-web-icc.vercel.app/",
+    sourceLink: "https://github.com/Laurence-R/icc_web"
+  },
+  {
+    title: "Scheduler Bot for GDGoC NCUE (In Progress)",
+    labels: ["Full-stack", "Next.js", "Supabase", "Discord OAuth2", "Meeting Scheduler"],
+    description: "A full-stack meeting scheduler for GDGoC NCUE built with Next.js 16 and Supabase. Features Discord OAuth2 authentication, real-time updates, calendar integration, and notifications for seamless community coordination.",
+    imgSrc: "/projects/schedulerbot.png",
+    demoLink: "https://discord-scheduler-bot.vercel.app/",
+    sourceLink: "https://github.com/Laurence-R/NCUE-GDG-Scheduler-Bot"
+  },
+  {
+    title: "Midas (In Progress)",
+    labels: ["Desktop App", "Finance Manangement", "Edge AI", "Investment"],
+    description: "A desktop application for personal finance management, built with CustomTKinter and Edge AI. Midas provides users with an intuitive interface to track expenses, set budgets, and receive AI-driven insights for smarter financial decisions. The app leverages local AI models to analyze spending patterns and offer personalized recommendations without compromising user privacy.",
+    imgSrc: "/projects/midas.png",
+    demoLink: null,
+    sourceLink: null
   }
 ]
 

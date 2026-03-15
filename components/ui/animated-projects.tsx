@@ -9,8 +9,8 @@ type Projects = {
   labels: string[];
   description: string;
   imgSrc: string;
-  demoLink: string;
-  sourceLink: string;
+  demoLink: string | null;
+  sourceLink: string | null;
 }
 
 export function AnimatedProjectShowCase ({ 
@@ -174,24 +174,32 @@ export function AnimatedProjectShowCase ({
               </button>
             </div>
             <div className="flex items-center gap-2 sm:gap-3">
-              <Link
-                href={projects[active].demoLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group inline-flex flex-1 items-center justify-center gap-1.5 rounded-lg bg-indigo-600 px-3 py-2 text-xs font-medium text-white shadow-sm transition-all duration-200 hover:bg-indigo-700 hover:shadow-md active:scale-95 sm:flex-none sm:px-4 sm:text-sm"
-              >
-                <IconExternalLink size={14} className="transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 sm:h-4 sm:w-4" />
-                <span>Live Demo</span>
-              </Link>
-              <Link
-                href={projects[active].sourceLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group inline-flex flex-1 items-center justify-center gap-1.5 rounded-lg border border-neutral-300 bg-white px-3 py-2 text-xs font-medium text-neutral-700 shadow-sm transition-all duration-200 hover:border-neutral-400 hover:bg-neutral-50 active:scale-95 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-300 dark:hover:border-neutral-600 dark:hover:bg-neutral-800 sm:flex-none sm:px-4 sm:text-sm"
-              >
-                <IconBrandGithub size={14} className="transition-transform duration-200 group-hover:scale-110 sm:h-4 sm:w-4" />
-                <span>Source</span>
-              </Link>
+              {
+                projects[active].demoLink !== null ? (
+                  <Link
+                    href={projects[active].demoLink ?? "#"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group inline-flex flex-1 items-center justify-center gap-1.5 rounded-lg bg-indigo-600 px-3 py-2 text-xs font-medium text-white shadow-sm transition-all duration-200 hover:bg-indigo-700 hover:shadow-md active:scale-95 sm:flex-none sm:px-4 sm:text-sm"
+                  >
+                    <IconExternalLink size={14} className="transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 sm:h-4 sm:w-4" />
+                    <span>Live Demo</span>
+                  </Link>
+                ): null
+              }
+              {
+                projects[active].sourceLink !== null ? (
+                  <Link
+                    href={projects[active].sourceLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group inline-flex flex-1 items-center justify-center gap-1.5 rounded-lg border border-neutral-300 bg-white px-3 py-2 text-xs font-medium text-neutral-700 shadow-sm transition-all duration-200 hover:border-neutral-400 hover:bg-neutral-50 active:scale-95 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-300 dark:hover:border-neutral-600 dark:hover:bg-neutral-800 sm:flex-none sm:px-4 sm:text-sm"
+                  >
+                    <IconBrandGithub size={14} className="transition-transform duration-200 group-hover:scale-110 sm:h-4 sm:w-4" />
+                    <span>Source</span>
+                  </Link>
+                ): null
+              }
             </div>
           </div>
         </div>
