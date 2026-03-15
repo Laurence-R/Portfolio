@@ -51,6 +51,15 @@ const data =[
         imageSrcs={["/experience/meta_react_cert.jpg"]}
       />
     )
+  },
+  {
+    title: "2025/09",
+    content: (
+      <TimeLineBlock 
+        title="加入 Google Developer Group on Campus NCUE"
+        description="在大三的上學期，我認為我需要接觸更多的技術社群，來幫助我在技術上成長，於是我加入了 Google Developer Group on Campus NCUE 這個社群。這個社群提供了很多學習資源和活動，讓我有機會與其他對技術有熱情的同學交流，並且還給予了我擔任前端工程講師的機會。這段經驗讓我更深入地了解了 Google 的技術生態系統，也讓我結識了很多志同道合的朋友。"
+      />
+    )
   }
 ]
 

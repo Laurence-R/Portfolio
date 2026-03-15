@@ -46,7 +46,7 @@ export function About() {
               About Me
             </h2>
             <p className="text-base leading-relaxed text-slate-600 dark:text-slate-400 md:text-lg">
-              我目前就讀彰師大資訊工程學系，今年大三，非常喜歡探索資訊技術。從零基礎到全端開發，到人工智慧再到影像處理領域，雖然我涉及了多個程式語言與領域，但我更重視的是如何運用這些技術來解決實際問題，創造有意義的產品。
+              我目前就讀彰師大資訊工程學系，今年大三，非常喜歡探索資訊技術。從零基礎到全端開發，到人工智慧再到影像處理領域，雖然我涉及了多個程式語言與領域，但我更重視的是如何運用這些技術來解決實際問題，創造有意義的成果。
               畢竟在 AI 時代下，工程師的價值不再是單純的程式碼撰寫，而是如何將技術與創意結合，打造出真正有用且具影響力的解決方案。
             </p>
             <p className="text-base leading-relaxed text-slate-600 dark:text-slate-400 md:text-lg">

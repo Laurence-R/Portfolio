@@ -18,7 +18,7 @@ interface TimelineEntry {
 interface TimeLineBlockProps {
   title: string;
   description?: string | null;
-  imageSrcs: string[] | null;
+  imageSrcs?: string[] | null;
 }
 
 export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
@@ -58,7 +58,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       <div ref={ref} className="relative max-w-7xl mx-auto pb-10 md:pb-20">
         {data.map((item, index) => (
           <TimelineItem
-            key={item.title}
+            key={index}
             item={item}
             heightTransform={heightTransform}
             containerRef={ref}
