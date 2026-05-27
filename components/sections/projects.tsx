@@ -13,9 +13,9 @@ const projects = [
   {
     title: "InvisiGuard",
     labels: ["Cyber Security", "Image", "Watermarking", "AI"],
-    description: "A privacy-first, browser-based digital watermarking tool built with Next.js 16, React 19, and Tailwind CSS 4. Uses DWT and QIM algorithms to embed invisible, resilient watermarks into images. Runs 100% client-side via Web Workers — no server uploads, zero data leakage, and smooth performance even during bulk processing.",
+    description: "A privacy-first, browser-based digital watermarking tool built with Next.js 16, React 19, and Tailwind CSS v4. Uses DWT and QIM algorithms to embed invisible, resilient watermarks into images. Runs 100% client-side via Web Workers — no server uploads, zero data leakage, and smooth performance even during bulk processing.",
     imgSrc: "/projects/invisiguard.png",
-    demoLink: null,
+    demoLink: "https://invisi-guard.vercel.app/",
     sourceLink: "https://github.com/Laurence-R/InvisiGuard"
   },
   {
@@ -44,12 +44,12 @@ const projects = [
   },
   {
     title: "Midas (In Progress)",
-    labels: ["Desktop App", "Finance Manangement", "Edge AI", "Investment"],
-    description: "A desktop application for personal finance management, built with CustomTKinter and Edge AI. Midas provides users with an intuitive interface to track expenses, set budgets, and receive AI-driven insights for smarter financial decisions. The app leverages local AI models to analyze spending patterns and offer personalized recommendations without compromising user privacy.",
+    labels: ["Desktop App", "Stock Market", "AI Analysis", "Smart Investment"],
+    description: "Planning...",
     imgSrc: "/projects/midas.png",
     demoLink: null,
     sourceLink: null
-  }
+  },
 ]
 
 export function Projects() {

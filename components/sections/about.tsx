@@ -10,7 +10,7 @@ export function About() {
           <CometCard>
             <button
               type="button"
-              className="my-10 flex w-72 cursor-pointer flex-col items-stretch rounded-[16px] border-0 bg-[#1F2121] p-2 saturate-0 sm:w-80 md:my-20 md:p-4 lg:w-120"
+              className="my-10 flex w-72 cursor-pointer flex-col items-stretch rounded-3xl border-0 bg-[#1F2121] p-2 saturate-0 sm:w-80 md:my-20 md:p-4 lg:w-120"
               aria-label="View invite F7RA"
               style={{
                 transformStyle: "preserve-3d",
@@ -19,10 +19,10 @@ export function About() {
               }}
             >
               <div className="mx-2 flex-1">
-                <div className="relative mt-2 aspect-[3/4] w-full">
+                <div className="relative mt-2 aspect-3/4 w-full">
                   <img
                     loading="lazy"
-                    className="absolute inset-0 h-full w-full rounded-[16px] bg-[#000000] object-cover contrast-75"
+                    className="absolute inset-0 h-full w-full rounded-3xl bg-[#000000] object-cover contrast-75"
                     alt="Invite background"
                     src="me.jpg"
                     style={{
@@ -32,7 +32,7 @@ export function About() {
                   />
                 </div>
               </div>
-              <div className="mt-4 flex flex-shrink-0 items-center pl-4 font-mono text-white">
+              <div className="mt-4 flex shrink-0 items-center pl-4 font-mono text-white">
                 <ArrowUp />&nbsp;Me
               </div>
             </button>
@@ -92,14 +92,14 @@ export function About() {
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
               {[
                 {
-                  title: "Vision-Language Models",
+                  title: "Privacy-First Edge AI Monitor — 超市熱區分析系統",
                   description:
-                    "研究視覺語言模型的多模態理解能力，探索影像與文字之間的語義橋接與推理。",
+                    "XIAO ESP32-S3 Sense 平台 + Swift YOLO 作為裝置端，在此處理敏感數據 (如人臉) 並送匿名事件到 Next.js Host 做超市熱區分析，幫助管理者做陳列商品的決策。完成熱區分析的同時，系統也達到隱私保護的功能。",
                 },
                 {
-                  title: "Nvidia Cosmos",
+                  title: "Physical AI",
                   description:
-                    "深入研究 Nvidia 世界基礎模型平台，探索物理世界模擬與生成式 AI 的下一步可能。",
+                    "深入研究世界模型相關論文與應用，探索物理世界模擬與生成式 AI 的將帶來的改變以及應用。",
                 },
               ].map((item) => (
                 <div
