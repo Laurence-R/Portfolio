@@ -1,4 +1,3 @@
-import { img } from "motion/react-client"
 import { AnimatedProjectShowCase } from "../ui/animated-projects"
 
 const projects = [
