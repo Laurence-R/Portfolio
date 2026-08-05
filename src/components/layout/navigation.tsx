@@ -8,13 +8,7 @@ import { IconBrandGithub, IconMenu2, IconX } from "@tabler/icons-react";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "motion/react";
-
-const navLinks = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Experience", href: "#experience" },
-  { label: "Projects", href: "#projects" },
-];
+import { navLinks, siteConfig } from "@/data/site";
 
 export function Navigation({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
@@ -96,7 +90,7 @@ export function Navigation({ className }: { className?: string }) {
             <div className="hidden md:flex items-center gap-2 shrink-0">
               <ThemeToggle />
               <Link
-                href="https://github.com/Laurence-R"
+                href={siteConfig.github}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center gap-1.5 text-sm font-medium text-white rounded-full bg-neutral-900 dark:bg-white/10 backdrop-blur-sm border border-neutral-800 dark:border-white/[0.12] px-4 py-2 shadow-sm transition-all duration-200 hover:bg-neutral-800 dark:hover:bg-white/20 hover:shadow-md active:scale-95"
@@ -189,7 +183,7 @@ export function Navigation({ className }: { className?: string }) {
               {/* Mobile GitHub Link */}
               <div className="border-t border-neutral-200/60 dark:border-white/[0.06] p-3">
                 <Link
-                  href="https://github.com/Laurence-R"
+                  href={siteConfig.github}
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setMobileOpen(false)}

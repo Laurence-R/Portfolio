@@ -17,7 +17,15 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Chang's Portfolio",
-  description: "This is a portfolio website built by Sheng-Lin, Chang.",
+  description:
+    "Sheng-Lin Chang 的個人作品集 — 彰師大資工系學生，專注 AI、全端開發與影像處理。展示 Fast-CLAHE 專題研究與全端專案作品。",
+  openGraph: {
+    title: "Chang's Portfolio",
+    description:
+      "Sheng-Lin Chang 的個人作品集 — AI、全端開發與影像處理",
+    url: "https://slchang-portfolio.vercel.app/",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -26,7 +34,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="zh-TW" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
