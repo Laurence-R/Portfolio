@@ -58,7 +58,7 @@ export const projects: Project[] = [
   },
   {
     title: "Std Score Management",
-    labels: ["AI", "RAG", "Education", "Python"],
+    labels: ["AI", "RAG", "Management", "Python", "Gemma 4"],
     description:
       "A simple AI assistant project with RAG for student score management. Enables natural language queries over academic records with retrieval-augmented generation for accurate, context-aware responses.",
     imgSrc: "/projects/std-score-management.png",
