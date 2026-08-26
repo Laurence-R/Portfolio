@@ -2,46 +2,36 @@ import type { ExperienceEntry } from "@/types/portfolio";
 
 export const experienceEntries: ExperienceEntry[] = [
   {
-    date: "2023/06",
-    title: "畢業於桃園市立陽明高中",
-    imageSrcs: ["/experience/ymhs.jpg"],
+    date: "2025 — 今",
+    title: "Fast-CLAHE — 百萬專題計畫",
+    description:
+      "負責 GPU 加速夜間 HDR 前處理模組。夜間 mAP50 由 ≈0.001 提升至 0.67+，前處理 P99 約 2.39 ms，可即時部署。",
+    imageSrcs: ["/projects/fast-clahe.png"],
   },
   {
-    date: "2024/01",
-    title: "掌握基礎的程式能力",
+    date: "2025 — 今",
+    title: "Star Dream Nails — 獨立全端開發與維護",
     description:
-      "考上大學以前，我完全沒有任何的程式能力，導致我第一個學期常花至少 3 小時的課後時間去解決一道簡單的題目，還好同學們都很願意分享他們進步的方法，也因此我接觸到了 LeetCode 與 ZeroJudge 這兩個平台，並且開始了我的刷題之路。",
-    imageSrcs: ["/experience/leetcode.png", "/experience/zerojudge.png"],
+      "為美甲工作室獨立交付 LINE 預約、後台與推播，系統已上線並持續維護。",
+    imageSrcs: ["/projects/stardream-nails.png"],
   },
   {
-    date: "2024/04",
-    title: "擔任 117 級三系聯合迎新之資工系總召",
+    date: "2025/09",
+    title: "GDG on Campus NCUE 前端講師",
     description:
-      "迎新是每年大學新生入學的第一個活動，對於新生來說非常重要。作為資工系的總召，我負責協調資工系的迎新活動，確保每個環節都能順利進行。這次經驗讓我學會了如何與不同的人合作，並且在壓力下保持冷靜。",
+      "在 Google Developer Group on Campus NCUE 擔任前端工程講師，整理並分享前端實作與學習路徑。",
     imageSrcs: [
-      "/experience/welcome_1.jpg",
-      "/experience/welcome_2.jpg",
-      "/experience/welcome_3.jpg",
+      "/experience/gdg_course_1.webp",
+      "/experience/gdg_course_2.webp",
+      "/experience/gdg_course_3.webp",
+      "/experience/gdg_course_4.webp",
     ],
   },
   {
-    date: "2025/04",
-    title: "113 學年度大專撞球錦標賽團體賽第三名",
-    description:
-      "自從上了大學我接觸到了撞球這項靜態運動，從此就迷上了這項運動，從一開始的不會打到可以代表學校參加比賽。這段過程讓我學到了專注、耐心與放手一搏的道理。對我來說撞球不是一項玩樂的運動，而是教我很多的處世道理的恩師，從這項運動中學到的道理可以幫助我穩住學習新技術時的心態，不容易受挫。",
-    imageSrcs: ["/experience/billiards_1.jpg", "/experience/billiards_2.jpg"],
-  },
-  {
     date: "2025/09",
-    title: "得到 Meta 的 React 課程認證",
+    title: "取得 Meta React 課程認證",
     description:
-      "在大學的第二年，我開始對前端開發產生興趣，並且自學了 React 框架。為了驗證我的技能，我參加了 Meta 的 React 基礎與進階課程，並且成功獲得了認證。這個認證不僅提升了我的前端開發能力，也擴大了我的未來職業方向。",
+      "完成 Meta 的 React 基礎與進階課程並取得認證。",
     imageSrcs: ["/experience/meta_react_cert.jpg"],
-  },
-  {
-    date: "2025/09",
-    title: "加入 Google Developer Group on Campus NCUE",
-    description:
-      "在大三的上學期，我認為我需要接觸更多的技術社群，來幫助我在技術上成長，於是我加入了 Google Developer Group on Campus NCUE 這個社群。這個社群提供了很多學習資源和活動，讓我有機會與其他對技術有熱情的同學交流，並且還給予了我擔任前端工程講師的機會。這段經驗讓我更深入地了解了 Google 的技術生態系統，也讓我結識了很多志同道合的朋友。",
   },
 ];

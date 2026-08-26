@@ -7,7 +7,8 @@ import { aboutContent } from "@/data/about";
 import { ArrowUp } from "lucide-react";
 
 export function About() {
-  const { intro, focusLabel, featuredFocus, secondaryFocus } = aboutContent;
+  const { intro, skills, focusLabel, featuredFocus, secondaryFocus } =
+    aboutContent;
   const focusItems = [featuredFocus, ...secondaryFocus];
 
   return (
@@ -31,7 +32,7 @@ export function About() {
                     loading="lazy"
                     className="absolute inset-0 h-full w-full rounded-3xl bg-[#000000] object-cover contrast-75"
                     alt="Profile photo"
-                    src="me.jpg"
+                    src="about/me.jpg"
                     style={{
                       boxShadow: "rgba(0, 0, 0, 0.05) 0px 5px 6px 0px",
                       opacity: 1,
@@ -58,6 +59,16 @@ export function About() {
                 {paragraph}
               </p>
             ))}
+            <div className="flex flex-wrap gap-2 pt-2">
+              {skills.map((skill) => (
+                <span
+                  key={skill}
+                  className="rounded-md bg-indigo-100 px-2.5 py-1 text-xs font-medium text-indigo-700 dark:bg-indigo-950/60 dark:text-indigo-300"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
           </div>
 
           <div className="w-full space-y-4">

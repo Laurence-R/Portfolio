@@ -38,7 +38,15 @@ export type FocusArea = {
 
 export type AboutContent = {
   intro: string[];
+  skills: string[];
   focusLabel: string;
   featuredFocus: FocusArea;
   secondaryFocus: FocusArea[];
+};
+
+export type HeroContent = {
+  greeting: string;
+  names: string[];
+  tagline: string;
+  proof: string;
 };

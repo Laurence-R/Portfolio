@@ -18,11 +18,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Chang's Portfolio",
   description:
-    "Sheng-Lin Chang 的個人作品集 — 彰師大資工系學生，專注 AI、全端開發與影像處理。展示 Fast-CLAHE 專題研究與全端專案作品。",
+    "張勝麟（Sheng-Lin Chang）— 彰師大資工大四，全端開發與電腦視覺。展示 Fast-CLAHE 專題與上線全端作品。",
   openGraph: {
     title: "Chang's Portfolio",
     description:
-      "Sheng-Lin Chang 的個人作品集 — AI、全端開發與影像處理",
+      "彰師大資工大四｜全端開發與電腦視覺 — Fast-CLAHE 與上線全端作品",
     url: "https://slchang-portfolio.vercel.app/",
     type: "website",
   },

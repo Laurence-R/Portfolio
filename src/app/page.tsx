@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Hero } from "@/components/sections/hero";
 import { About } from "@/components/sections/about";
 import { Experience } from "@/components/sections/experience";
@@ -10,8 +9,8 @@ export default function Home() {
     <div className="bg-slate-50 dark:bg-slate-950 min-h-screen isolate">
       <Hero />
       <About />
-      <Experience />
       <Projects />
+      <Experience />
       <Footer />
     </div>
   );

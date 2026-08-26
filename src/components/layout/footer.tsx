@@ -106,7 +106,7 @@ export function Footer() {
               </span>
             </a>
             <p className="max-w-xs text-sm leading-relaxed text-neutral-500 dark:text-neutral-400">
-              彰師大資工系學生，熱衷 AI、全端開發與影像處理。致力於用技術解決實際問題，創造有意義的產品。
+              {siteConfig.blurb}
             </p>
             <div className="flex items-center gap-3 pt-1">
               {socialLinks.map((link, i) => {

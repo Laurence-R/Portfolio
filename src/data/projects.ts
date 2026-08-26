@@ -1,21 +1,20 @@
 import type { Project } from "@/types/portfolio";
-import { siteConfig } from "@/data/site";
 
 export const projects: Project[] = [
   {
     title: "Fast-CLAHE",
     labels: ["Research", "Computer Vision", "GPU", "YOLO26", "Python"],
     description:
-      "A monorepo for night-time HDR preprocessing (16-bit CLAHE) and YOLO26 detection ablation experiments. Implements GPU-accelerated contrast enhancement with linear tone mapping, achieving real-time preprocessing (P99 ~2.39 ms) and significant mAP50 improvements for night vision detection.",
+      "預訓練物件偵測模型在極端夜間道路場景下幾乎失效。我獨立做出以 HDR 影像作為輸入的 GPU 加速 16-bit CLAHE 前處理模組，避免 LDR 輸入造成的 clipping。在不更動下游模型的架構下，夜間 mAP50 由 ≈0.001 提升至 0.67+，在解析度為 1200x800 的影像下，前處理 P99 僅約 2.39 ms，可即時部署。",
     imgSrc: "/projects/fast-clahe.png",
     demoLink: null,
     sourceLink: "https://github.com/Laurence-R/fast-clahe",
   },
   {
-    title: "Stardream Nails",
+    title: "Star Dream Nails",
     labels: ["Full-stack", "LINE LIFF", "Supabase", "Next.js", "Booking System"],
     description:
-      "A LINE LIFF booking system for a nail studio. Customers complete multi-step reservations with dynamic pricing inside LINE; admins manage services, schedules, and orders via Supabase Auth dashboard, with LINE Messaging API push notifications for booking events.",
+      "美甲行業的款式、設計、預約流程有許多模糊不清的地方，因此採用傳統的聯絡預約方式將會耗費大量的時間。我向美甲師了解美甲的商業模式之後，將這些流程自動化，獨立開發出這套系統且省下了約 75% 的時間。本系統採用 LINE 的 LIFF 多步驟預約、動態計價、後台與推播功能，並持續維護。",
     imgSrc: "/projects/stardream-nails.png",
     demoLink: "https://stardream-nails.vercel.app/",
     sourceLink: "https://github.com/Laurence-R/stardream-nails",
@@ -24,54 +23,18 @@ export const projects: Project[] = [
     title: "InvisiGuard",
     labels: ["Cyber Security", "Image", "Watermarking", "AI"],
     description:
-      "A privacy-first, browser-based digital watermarking tool built with Next.js 16, React 19, and Tailwind CSS v4. Uses DWT and QIM algorithms to embed invisible, resilient watermarks into images. Runs 100% client-side via Web Workers — no server uploads, zero data leakage.",
+      "需要在瀏覽器內嵌隱形浮水印，且圖檔不上傳伺服器。以 DWT／QIM 在 Web Worker 完成，全程 client-side，零資料外流。",
     imgSrc: "/projects/invisiguard.png",
     demoLink: "https://invisi-guard.vercel.app/",
     sourceLink: "https://github.com/Laurence-R/InvisiGuard",
   },
   {
-    title: "Easy-Enhance",
-    labels: ["Desktop App", "Image Enhancement", "Research", "Python"],
-    description:
-      "A desktop tool designed for image enhancement research, providing a standardized workflow to import enhancement methods, perform batch testing, and automatically compute evaluation metrics for reproducible experiments.",
-    imgSrc: "/projects/easy-enhance.png",
-    demoLink: null,
-    sourceLink: "https://github.com/Laurence-R/easy-enhance",
-  },
-  {
     title: "Professor Personal Website",
-    labels: ["Personal Website", "Next.js", "Tailwind CSS", "React", "Aceternity UI"],
+    labels: ["Personal Website", "Next.js", "Tailwind CSS", "React"],
     description:
-      "A personal website built with Next.js 16, Tailwind CSS, and Aceternity UI, designed to showcase the professor's research, publications, and courses. Migrated from legacy Big5 encoding to a modern, accessible web experience.",
+      "教授個人網站需從舊版 Big5 編碼遷移到現代網頁，展示研究、著作與課程。以 Next.js 重建，讓真實使用者能在現行瀏覽器閱讀與瀏覽。",
     imgSrc: "/projects/iccweb.png",
     demoLink: "https://personal-web-icc.vercel.app/",
     sourceLink: "https://github.com/Laurence-R/icc_web",
-  },
-  {
-    title: "Midas",
-    labels: ["Desktop App", "Stock Market", "AI Analysis", "Python"],
-    description:
-      "An AI post-market analysis system for smart investment insights. Developed with speck-kit workflow, combining market data processing with AI-driven analysis to support post-trading decision making.",
-    imgSrc: "/projects/midas.png",
-    demoLink: null,
-    sourceLink: "https://github.com/Laurence-R/midas",
-  },
-  {
-    title: "Std Score Management",
-    labels: ["AI", "RAG", "Management", "Python", "Gemma 4"],
-    description:
-      "A simple AI assistant project with RAG for student score management. Enables natural language queries over academic records with retrieval-augmented generation for accurate, context-aware responses.",
-    imgSrc: "/projects/std-score-management.png",
-    demoLink: null,
-    sourceLink: "https://github.com/Laurence-R/std-score-management",
-  },
-  {
-    title: "Portfolio",
-    labels: ["Personal Website", "Next.js", "Tailwind CSS", "Aceternity UI"],
-    description:
-      "This is my personal portfolio website built with Next.js 16, React 19, Tailwind CSS 4, and Aceternity UI. It features animated sections, dark mode, and a data-driven architecture for easy content updates.",
-    imgSrc: "/projects/portfolio.png",
-    demoLink: siteConfig.portfolioUrl,
-    sourceLink: "https://github.com/Laurence-R/Portfolio",
   },
 ];
