@@ -18,7 +18,7 @@ export function About() {
           <CometCard>
             <button
               type="button"
-              className="my-10 flex w-72 cursor-pointer flex-col items-stretch rounded-3xl border-0 bg-[#1F2121] p-2 saturate-0 sm:w-80 md:my-20 md:p-4 lg:w-120"
+              className="my-10 flex w-72 cursor-pointer flex-col items-stretch rounded-3xl border-0 bg-[#1F2121] p-2 sm:w-80 md:my-20 md:p-4 lg:w-120"
               aria-label="Profile photo"
               style={{
                 transformStyle: "preserve-3d",

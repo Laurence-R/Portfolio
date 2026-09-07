@@ -15,7 +15,7 @@ export const heroContent: HeroContent = {
   names: ["張勝麟", "Laurence", "Chang Sheng-Lin"],
   tagline: "彰師大資工大四 ｜ 全端開發與電腦視覺",
   proof:
-    "獨立交付過可上線的 LINE 預約系統；專題 Fast-CLAHE 以 GPU 加速夜間偵測前處理，夜間 mAP50 由 ≈0.001 提升至 0.67+。",
+    "獨立交付過可上線的 LINE 預約系統；專題 Fast-CLAHE 以 GPU 加速夜間偵測前處理，YOLO26xl 夜間 mAP50-95 由 ≈0.41 提升至 0.526+。",
 };
 
 export const navLinks: NavLink[] = [

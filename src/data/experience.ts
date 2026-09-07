@@ -5,7 +5,7 @@ export const experienceEntries: ExperienceEntry[] = [
     date: "2025 — 今",
     title: "Fast-CLAHE — 百萬專題計畫",
     description:
-      "負責 GPU 加速夜間 HDR 前處理模組。夜間 mAP50 由 ≈0.001 提升至 0.67+，前處理 P99 約 2.39 ms，可即時部署。",
+      "負責 GPU 加速夜間 HDR 前處理模組。YOLO26xl 夜間 mAP50-95 由 ≈0.41 提升至 0.526+，前處理 P99 約 2.39 ms，可即時部署。",
     imageSrcs: ["/projects/fast-clahe.png"],
   },
   {

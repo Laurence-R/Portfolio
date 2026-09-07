@@ -5,7 +5,7 @@ export const projects: Project[] = [
     title: "Fast-CLAHE",
     labels: ["Research", "Computer Vision", "GPU", "YOLO26", "Python"],
     description:
-      "預訓練物件偵測模型在極端夜間道路場景下幾乎失效。我獨立做出以 HDR 影像作為輸入的 GPU 加速 16-bit CLAHE 前處理模組，避免 LDR 輸入造成的 clipping。在不更動下游模型的架構下，夜間 mAP50 由 ≈0.001 提升至 0.67+，在解析度為 1200x800 的影像下，前處理 P99 僅約 2.39 ms，可即時部署。",
+      "預訓練物件偵測模型在極端夜間道路場景下幾乎失效。我獨立做出以 HDR 影像作為輸入的 GPU 加速 16-bit CLAHE 前處理模組，避免 LDR 輸入造成的 clipping。在不更動下游模型的架構下，YOLO26xl 夜間 mAP50-95 由 ≈0.41 提升至 0.526+，在解析度為 1200x800 的影像下，前處理 P99 僅約 2.39 ms，可即時部署。",
     imgSrc: "/projects/fast-clahe.png",
     demoLink: null,
     sourceLink: "https://github.com/Laurence-R/fast-clahe",
@@ -14,7 +14,7 @@ export const projects: Project[] = [
     title: "Star Dream Nails",
     labels: ["Full-stack", "LINE LIFF", "Supabase", "Next.js", "Booking System"],
     description:
-      "美甲行業的款式、設計、預約流程有許多模糊不清的地方，因此採用傳統的聯絡預約方式將會耗費大量的時間。我向美甲師了解美甲的商業模式之後，將這些流程自動化，獨立開發出這套系統且省下了約 75% 的時間。本系統採用 LINE 的 LIFF 多步驟預約、動態計價、後台與推播功能，並持續維護。",
+      "美甲行業的款式、設計、預約流程有許多模糊不清的地方，因此採用傳統的聯絡預約方式將會耗費大量的時間。我向美甲師了解美甲的商業模式之後，將這些流程自動化，獨立開發出這套系統且省下了約 75% 的時間。本系統採用 Next.js 開發，在 LINE 的 LIFF 上實現多步驟預約、動態計價、後台與推播功能，並持續維護。",
     imgSrc: "/projects/stardream-nails.png",
     demoLink: "https://stardream-nails.vercel.app/",
     sourceLink: "https://github.com/Laurence-R/stardream-nails",
