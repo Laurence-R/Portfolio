@@ -171,9 +171,9 @@ export function AnimatedProjectShowCase({
               </button>
             </div>
             <div className="flex items-center gap-2 sm:gap-3">
-              {projects[active].demoLink !== null && (
+              {projects[active].tryNowUrl !== null && (
                 <Link
-                  href={projects[active].demoLink ?? "#"}
+                  href={projects[active].tryNowUrl ?? "#"}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group inline-flex flex-1 items-center justify-center gap-1.5 rounded-lg bg-indigo-600 px-3 py-2 text-xs font-medium text-white shadow-sm transition-all duration-200 hover:bg-indigo-700 hover:shadow-md active:scale-95 sm:flex-none sm:px-4 sm:text-sm"

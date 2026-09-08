@@ -14,7 +14,7 @@ export type Project = {
   labels: string[];
   description: string;
   imgSrc: string;
-  demoLink: string | null;
+  tryNowUrl: string | null;
   sourceLink: string | null;
 };
 
@@ -32,7 +32,7 @@ export type FocusArea = {
   badge?: string;
   tags?: string[];
   githubUrl?: string;
-  demoUrl?: string;
+  tryNowUrl?: string;
   highlights?: string[];
 };
 

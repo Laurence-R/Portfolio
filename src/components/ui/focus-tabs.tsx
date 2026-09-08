@@ -16,7 +16,7 @@ const CARD_CLASS =
   "flex h-[26rem] flex-col rounded-2xl border border-slate-200 bg-linear-to-br from-slate-50 to-indigo-50/40 p-6 shadow-sm dark:border-slate-800 dark:from-slate-950 dark:to-indigo-950/30 sm:h-[28rem] sm:p-8";
 
 function FocusPanel({ item }: { item: FocusArea }) {
-  const hasLinks = Boolean(item.githubUrl || item.demoUrl);
+  const hasLinks = Boolean(item.githubUrl || item.tryNowUrl);
 
   return (
     <div className="flex h-full flex-col gap-4">
@@ -69,15 +69,15 @@ function FocusPanel({ item }: { item: FocusArea }) {
       <div className="mt-auto min-h-[2.75rem] pt-1">
         {hasLinks ? (
           <div className="flex flex-wrap gap-3">
-            {item.demoUrl && (
+            {item.tryNowUrl && (
               <Link
-                href={item.demoUrl}
+                href={item.tryNowUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 rounded-lg bg-indigo-600 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-indigo-700"
               >
                 <IconExternalLink size={16} />
-                Live Demo
+                Try Now
               </Link>
             )}
             {item.githubUrl && (

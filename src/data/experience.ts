@@ -16,6 +16,13 @@ export const experienceEntries: ExperienceEntry[] = [
     imageSrcs: ["/projects/stardream-nails.png"],
   },
   {
+    date: "2026/08",
+    title: "取得 IBM Computer Vision and Image Processing Essentials 認證",
+    description:
+      "完成 IBM 的 Computer Vision and Image Processing Essentials 課程並取得認證。",
+    imageSrcs: ["/experience/ibm_cert.png"],
+  },
+  {
     date: "2025/09",
     title: "GDG on Campus NCUE 前端講師",
     description:
