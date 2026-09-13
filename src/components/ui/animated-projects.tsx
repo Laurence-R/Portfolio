@@ -109,6 +109,13 @@ export function AnimatedProjectShowCase({
     setRotations(projects.map(() => Math.floor(Math.random() * 21) - 10));
   }, [projects.length]);
 
+  const activeProject = projects[active];
+  if (!activeProject) {
+    return null;
+  }
+
+  const githubUrl = activeProject.githubUrl;
+
   return (
     <div className="mx-auto max-w-sm px-4 py-12 font-sans antialiased sm:max-w-xl md:max-w-5xl md:px-8 md:py-20 lg:max-w-7xl lg:px-12">
       <div className="relative grid grid-cols-1 gap-10 md:grid-cols-[2fr_3fr] md:gap-16">
@@ -138,19 +145,36 @@ export function AnimatedProjectShowCase({
             transition={{ duration: 0.2, ease: "easeInOut" }}
           >
             <h3 className="text-xl font-bold text-black dark:text-white sm:text-2xl">
-              {projects[active].title}
+              {activeProject.title}
             </h3>
             <p className="text-xs text-gray-500 dark:text-neutral-500 sm:text-sm">
-              {projects[active].labels.join(" / ")}
+              {activeProject.labels.join(" / ")}
             </p>
-            <motion.p
-              className="mt-3 text-sm leading-relaxed text-gray-500 dark:text-neutral-300 sm:mt-4 sm:text-base md:mt-8 md:text-lg"
+            <motion.div
+              className="mt-3 space-y-4 sm:mt-4 md:mt-6"
               initial={{ filter: "blur(8px)", opacity: 0, y: 8 }}
               animate={{ filter: "blur(0px)", opacity: 1, y: 0 }}
               transition={{ duration: 0.35, ease: "easeInOut" }}
             >
-              {projects[active].description}
-            </motion.p>
+              <p className="text-sm leading-relaxed text-slate-600 dark:text-slate-400 sm:text-base">
+                {activeProject.description}
+              </p>
+              {activeProject.highlights.length > 0 ? (
+                <ul className="space-y-2 text-sm text-slate-600 dark:text-slate-300">
+                  {activeProject.highlights.map((point) => (
+                    <li key={point} className="flex gap-2">
+                      <span
+                        aria-hidden="true"
+                        className="shrink-0 text-indigo-500 dark:text-indigo-400"
+                      >
+                        •
+                      </span>
+                      <span>{point}</span>
+                    </li>
+                  ))}
+                </ul>
+              ) : null}
+            </motion.div>
           </motion.div>
 
           <div className="mt-6 flex flex-col-reverse gap-4 sm:flex-row sm:items-center sm:justify-between">
@@ -158,6 +182,7 @@ export function AnimatedProjectShowCase({
               <button
                 type="button"
                 onClick={handlePrev}
+                aria-label="上一件作品"
                 className="group/button flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 transition-colors hover:bg-gray-200 dark:bg-neutral-800 dark:hover:bg-neutral-700 sm:h-7 sm:w-7"
               >
                 <IconArrowLeft className="h-5 w-5 text-black transition-transform duration-300 group-hover/button:rotate-12 dark:text-neutral-400" />
@@ -165,40 +190,44 @@ export function AnimatedProjectShowCase({
               <button
                 type="button"
                 onClick={handleNext}
+                aria-label="下一件作品"
                 className="group/button flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 transition-colors hover:bg-gray-200 dark:bg-neutral-800 dark:hover:bg-neutral-700 sm:h-7 sm:w-7"
               >
                 <IconArrowRight className="h-5 w-5 text-black transition-transform duration-300 group-hover/button:-rotate-12 dark:text-neutral-400" />
               </button>
             </div>
-            <div className="flex items-center gap-2 sm:gap-3">
-              {projects[active].tryNowUrl !== null && (
+            <div className="flex flex-wrap items-center gap-2 sm:gap-3">
+              {activeProject.actions.map((action) => (
                 <Link
-                  href={projects[active].tryNowUrl ?? "#"}
+                  key={action.href}
+                  href={action.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group inline-flex flex-1 items-center justify-center gap-1.5 rounded-lg bg-indigo-600 px-3 py-2 text-xs font-medium text-white shadow-sm transition-all duration-200 hover:bg-indigo-700 hover:shadow-md active:scale-95 sm:flex-none sm:px-4 sm:text-sm"
+                  prefetch={false}
+                  className="group inline-flex items-center justify-center gap-1.5 rounded-lg bg-indigo-600 px-3 py-2 text-xs font-medium whitespace-nowrap text-white shadow-sm transition-all duration-200 hover:bg-indigo-700 hover:shadow-md active:scale-95 sm:px-4 sm:text-sm"
                 >
                   <IconExternalLink
                     size={14}
                     className="transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 sm:h-4 sm:w-4"
                   />
-                  <span>Live Demo</span>
+                  <span>{action.label}</span>
                 </Link>
-              )}
-              {projects[active].sourceLink !== null && (
+              ))}
+              {githubUrl ? (
                 <Link
-                  href={projects[active].sourceLink}
+                  href={githubUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group inline-flex flex-1 items-center justify-center gap-1.5 rounded-lg border border-neutral-300 bg-white px-3 py-2 text-xs font-medium text-neutral-700 shadow-sm transition-all duration-200 hover:border-neutral-400 hover:bg-neutral-50 active:scale-95 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-300 dark:hover:border-neutral-600 dark:hover:bg-neutral-800 sm:flex-none sm:px-4 sm:text-sm"
+                  prefetch={false}
+                  className="group inline-flex items-center justify-center gap-1.5 rounded-lg border border-neutral-300 bg-white px-3 py-2 text-xs font-medium whitespace-nowrap text-neutral-700 shadow-sm transition-all duration-200 hover:border-neutral-400 hover:bg-neutral-50 active:scale-95 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-300 dark:hover:border-neutral-600 dark:hover:bg-neutral-800 sm:px-4 sm:text-sm"
                 >
                   <IconBrandGithub
                     size={14}
                     className="transition-transform duration-200 group-hover:scale-110 sm:h-4 sm:w-4"
                   />
-                  <span>Source</span>
+                  <span>GitHub</span>
                 </Link>
-              )}
+              ) : null}
             </div>
           </div>
         </div>

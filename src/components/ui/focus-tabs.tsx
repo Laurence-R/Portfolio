@@ -22,7 +22,7 @@ function FocusPanel({ item }: { item: FocusArea }) {
     <div className="flex h-full flex-col gap-4">
       <div className="min-h-[1.625rem]">
         {item.badge ? (
-          <span className="inline-block w-fit rounded-full bg-indigo-500 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-white">
+          <span className="inline-block w-fit rounded-full bg-indigo-500 px-3 py-1 text-sm font-bold uppercase tracking-wider text-white">
             {item.badge}
           </span>
         ) : null}

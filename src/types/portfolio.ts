@@ -9,13 +9,19 @@ export type SocialLink = {
   icon: "github" | "email";
 };
 
+export type ProjectAction = {
+  label: string;
+  href: string;
+};
+
 export type Project = {
   title: string;
   labels: string[];
   description: string;
+  highlights: string[];
   imgSrc: string;
-  tryNowUrl: string | null;
-  sourceLink: string | null;
+  githubUrl: string | null;
+  actions: ProjectAction[];
 };
 
 export type ExperienceEntry = {

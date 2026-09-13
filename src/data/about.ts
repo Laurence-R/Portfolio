@@ -31,7 +31,7 @@ export const aboutContent: AboutContent = {
     description:
       "提出 GPU 加速 CLAHE 前處理模組，透過 HDR 的特性避免 Data Clipping，提升夜間物件偵測準確性。",
     highlights: [
-      "YOLO26xl 夜間 mAP50-95 由 ≈0.41 提升至 0.526+",
+      "YOLO26x 夜間 mAP50-95 由 ≈0.41 提升至 0.526+",
       "前處理模組處理 1200x800 解析度影像的 P99 延遲僅約 2.39 ms",
     ],
     tags: ["CLAHE", "PyTorch", "GPU", "Real-time", "TensorRT", "YOLO26"],
@@ -40,12 +40,16 @@ export const aboutContent: AboutContent = {
   secondaryFocus: [
     {
       tabLabel: "Star Dream Nails",
+      badge: "上線交付系統",
       title: "Star Dream Nails — 服務預約系統",
       description:
         "為美甲工作室打造 LINE 預約系統，並提供後台管理、形象網站與顧客推播。持續維護中。",
       highlights: [
-        "顧客可在 LINE 內完成多步驟預約與動態計價",
-        "店家擁有後台管理服務、顧客管理、預約訂單管理、推播通知預約事件等功能",
+        "顧客可在網頁或 LINE 完成多步驟預約",
+        "店家擁有完整的後台管理服務",
+        "店家可以透過財務管理查看收入、支出、淨利等財務狀況",
+        "已服務 50+ 位顧客",
+        "增加預約效率 75%"
       ],
       tags: ["Next.js", "LINE LIFF", "Supabase", "Full-stack"],
       tryNowUrl: "https://stardream-nails.vercel.app/",
